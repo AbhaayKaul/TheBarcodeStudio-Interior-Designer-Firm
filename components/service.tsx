@@ -3,7 +3,7 @@ import { Grid, Text, Flex, Heading, Button, Box, Image } from '@chakra-ui/core'
 
 const Service: React.FC = () => {
   return (
-    <Box position="relative">
+    <Box id="services" position="relative" mt={['12', '16', '20', '24']}>
       <Image
         width={['0%', '0%', '0%', '40%', '40%']}
         maxW="660px"
@@ -28,36 +28,37 @@ const Service: React.FC = () => {
           alignItems="center"
           maxW="850px"
           color="white"
-          paddingY="88px"
-          gridColumn={['2 / 12', '2 / 12', '2 /12', '7 / 13', '7 / 13']}
+          paddingY={['44px', '60px', '72px', '88px']}
+          paddingX={['6', '8', '8', '0']}
+          gridColumn={['1 / 13', '1 / 13', '1 / 13', '7 / 13', '7 / 13']}
           gridRow="1 / 4"
         >
           <Heading
             as="h3"
             textTransform="uppercase"
-            fontSize={['3xl', '3xl', '5xl', '5xl', '5xl']}
+            fontSize={['2xl', '3xl', '3xl', '4xl', '5xl']}
             fontWeight="extrabold"
-            mb="8px"
+            mb={['6px', '8px', '8px']}
             alignSelf="flex-start"
           >
             Our Professional Services
           </Heading>
           <Heading
             as="h4"
-            fontSize={['lg', 'lg', 'xl', 'xl', 'xl']}
+            fontSize={['md', 'lg', 'lg', 'xl', 'xl']}
             fontWeight="normal"
-            mb="20px"
+            mb={['12px', '16px', '20px']}
             alignSelf="flex-start"
           >
             We Will Create Modern And First Class Interior.
           </Heading>
           <Text
-            fontSize="sm"
-            mb="20px"
+            fontSize={['xs', 'sm', 'sm', 'sm']}
+            mb={['12px', '16px', '20px']}
             alignSelf="flex-start"
             textAlign="left"
-            lineHeight="23px"
-            mr={'30px'}
+            lineHeight={['1.5', '1.6', '1.6', '23px']}
+            mr={['0', '0', '0', '30px']}
           >
             Barcode Studio, an interior and architectural 
             design firm, offers a diverse range of professional 
@@ -76,15 +77,17 @@ const Service: React.FC = () => {
              architectural design, creating spaces that reflect
               both style and practicality.
           </Text>
-          <Button
-            alignSelf="flex-start"
-            variantColor="white"
-            backgroundColor="#fff"
-            color="orange.600"
-            width="fit-content"
-          >
-            Learn More
-          </Button>
+          <a href="/services" style={{ textDecoration: 'none' }}>
+            <Button
+              alignSelf="flex-start"
+              variantColor="white"
+              backgroundColor="#fff"
+              color="orange.600"
+              width="fit-content"
+            >
+              Learn More
+            </Button>
+          </a>
         </Flex>
       </Grid>
     </Box>

@@ -16,6 +16,29 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
           href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;700;800&display=swap"
           rel="stylesheet"
         ></link>
+        <style>{`
+          html {
+            scroll-behavior: smooth;
+          }
+          
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+          
+          @keyframes slideInRight {
+            from {
+              transform: translateX(100%);
+            }
+            to {
+              transform: translateX(0);
+            }
+          }
+        `}</style>
         <title>The BarCode Studio</title>
         <meta
           name="description"

@@ -25,6 +25,6 @@ const Map = ({ address }) => {
         });
       });
     }, [address]);
-    return <div id="map" style={{ height: '400px' }}></div>;
+    return <div id="map" style={{ height: '400px', width: '100%', borderRadius: '8px' }}></div>;
   };
   export default Map;

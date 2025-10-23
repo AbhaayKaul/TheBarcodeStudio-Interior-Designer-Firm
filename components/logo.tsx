@@ -1,18 +1,32 @@
 import React from 'react'
-import { Image } from '@chakra-ui/core'
-import { Heading, Text } from '@chakra-ui/core'
 
 const Logo: React.FC = () => {
   return (
     <>
-    <Image src="/images/BAR-10.jpg" width="140px" />
-      {/* <Heading as="h1" size="lg" textTransform="uppercase" marginLeft={2}>
-        
-        <Text display="inline" fontWeight="extrabold" color="#261F1A">
-          The BARCODE STUDIO
-        </Text>{' '}
-    
-      </Heading> */}
+      <style jsx>{`
+        .logo-image {
+          width: 80px;
+        }
+
+        @media (min-width: 480px) {
+          .logo-image {
+            width: 100px;
+          }
+        }
+
+        @media (min-width: 768px) {
+          .logo-image {
+            width: 120px;
+          }
+        }
+
+        @media (min-width: 1024px) {
+          .logo-image {
+            width: 140px;
+          }
+        }
+      `}</style>
+      <img src="/images/BAR-10.jpg" alt="The Barcode Studio Logo" className="logo-image" />
     </>
   )
 }
