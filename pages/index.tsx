@@ -13,7 +13,7 @@ import ContactUs from '../components/contactus'
 const Home: React.FC = () => {
   return (
     <>
-    <Headroom>
+    <Headroom style={{ zIndex: 10000 }}>
     <Nav />
     </Headroom>
       <Header />

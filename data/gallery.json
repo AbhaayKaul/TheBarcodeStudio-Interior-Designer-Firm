@@ -1,0 +1,40 @@
+{
+  "images": [
+    {
+      "id": "1",
+      "url": "/grid/01_01.jpg",
+      "cloudinaryId": null,
+      "addedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "url": "/grid/01_02t.jpg",
+      "cloudinaryId": null,
+      "addedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "url": "/grid/01_02.jpg",
+      "cloudinaryId": null,
+      "addedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "4",
+      "url": "/grid/01_03.jpg",
+      "cloudinaryId": null,
+      "addedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "5",
+      "url": "/grid/hgrt56.jpg",
+      "cloudinaryId": null,
+      "addedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "6",
+      "url": "/grid/study wash.jpg",
+      "cloudinaryId": null,
+      "addedAt": "2024-01-01T00:00:00.000Z"
+    }
+  ]
+}

@@ -13,6 +13,7 @@ const Header: React.FC = () => {
   
   return (
     <Grid
+      id="home"
       data-aos="fade-right"
       data-aos-easing="ease-out"
      data-aos-duration="1000"
@@ -20,8 +21,9 @@ const Header: React.FC = () => {
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
-      height={['30vh', '30vh', '40vh', '100vh']}
+      height={['50vh', '60vh', '70vh', '100vh']}
       templateRows="1fr 1fr 1fr"
+      style={{ position: 'relative', zIndex: 1 }}
     >
       <Flex
         flexDirection="column"
@@ -32,18 +34,19 @@ const Header: React.FC = () => {
       <Box sx={innerBoxStyles} backdropFilter='invert(100%)'> */}
         <Heading
           as="h3"
-          fontSize={['4xl', '5xl', '6xl', '6xl', '6xl']}
+          fontSize={['2xl', '3xl', '4xl', '5xl', '6xl']}
           fontFamily={'Gill Sans'}
           color="rgb(250,230,170)"
           bg=""
           mb="2"
           width="fit-content"
-          paddingX={['4px', '12px', '12px', '16px', '16px']}
-          paddingY={['4px', '4px', '12px', '12px', '16px']}
+          paddingX={['8px', '12px', '12px', '16px', '16px']}
+          paddingY={['6px', '8px', '12px', '12px', '16px']}
           data-aos="fade-in"
           data-aos-easing="ease-in-out"
           data-aos-delay="250"
           textTransform={'uppercase'}
+          lineHeight={['1.2', '1.2', '1.2', '1.2', '1.2']}
 
         >
           Your Space is Our Canvas.
@@ -52,14 +55,14 @@ const Header: React.FC = () => {
       </Box> */}
         <Heading
           as="h3"
-          fontSize={['lg', 'lg', '2xl', '2xl', '2xl']}
+          fontSize={['sm', 'md', 'lg', 'xl', '2xl']}
           fontFamily={'Gill Sans'}
           textTransform="uppercase"
           color="261F1A"
           bg="rgb(220,210,198)"
           width="fit-content"
-          paddingX={['24px', '24px', '30px', '30px', '30px']}
-          paddingY={['8px', '8px', '14px', '14px', '14px']}
+          paddingX={['16px', '20px', '24px', '28px', '30px']}
+          paddingY={['6px', '8px', '10px', '12px', '14px']}
           data-aos="zoom-left"
           data-aos-easing="ease-in-out"
           data-aos-delay="550"
