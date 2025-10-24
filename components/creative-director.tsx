@@ -1,9 +1,16 @@
 import React from 'react'
 
-import { Flex, Text, Heading, Grid, Image, Box } from '@chakra-ui/core'
+import { Box, Flex, Grid, Heading, Image, Text } from '@chakra-ui/core'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 import { FaLinkedin } from 'react-icons/fa'
 
 const CreativeDirector: React.FC = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: true })
+  }, [])
+  
   return (
     <Grid templateColumns="repeat(6, 1fr)" marginY={['12', '16', '20', '24']} alignItems="center">
       <Flex
@@ -25,17 +32,28 @@ const CreativeDirector: React.FC = () => {
           fontWeight="normal"
           mb={['12px', '16px', '20px']}
           alignSelf="flex-start"
+          data-aos="fade-right"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="100"
         >
           Founder
         </Heading>
-        <Text fontSize={['sm', 'sm', 'md', 'md']} mb={['12px', '16px', '20px']} alignSelf="flex-start" textAlign="left">
+        <Text 
+          fontSize={['sm', 'sm', 'md', 'md']} 
+          mb={['12px', '16px', '20px']} 
+          alignSelf="flex-start" 
+          textAlign="left"
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="200"
+        >
         Manish Gupta is the Founder and Principal Architect at The BarCode Studio. 
         Born in Delhi, he studied at the renowned University School of Architecture
          and Planning, IPU Delhi. After graduating, he worked with Anagram Architects 
-         for a brief stint before founding The BarCode Studio. Manish’s passion for 
+         for a brief stint before founding The BarCode Studio. Manish's passion for 
          stretching the conceptual possibilities of a project right down to its last
           detail is reflected in his diverse repertoire. With a keen interest in practising
-           in a wide variety and scales of projects, his approach takes into account the 
+           in a wide variety and scales of projects, his approach takes into account the 
            spatial experience of the user before delving into the details. He practices the
             philosophy of less is more, and firmly believes that design is a collaborative
              effort. 
@@ -49,6 +67,9 @@ const CreativeDirector: React.FC = () => {
           mt={['8', '8', '0', '0']}
           display="flex"
           justifyContent={['center', 'center', 'center', 'center', 'flex-start']}
+          data-aos="fade-left"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="300"
         >
           <Box
             backgroundColor="#F7F5F3"
@@ -86,6 +107,9 @@ const CreativeDirector: React.FC = () => {
             backgroundColor="white"
             borderColor="#A9957B"
             borderWidth={['4px', '5px', '6px']}
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="400"
           >
             <Text alignItems="center" textAlign='center' textTransform="uppercase" fontWeight="medium" fontSize={['md', 'lg', 'xl', '22px']}>
               Manish Gupta

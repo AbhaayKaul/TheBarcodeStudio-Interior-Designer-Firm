@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react'
-import { Flex, Text, Heading, Box, Image } from '@chakra-ui/core'
+import { Box, Flex, Heading, Image, Text } from '@chakra-ui/core'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import React, { useEffect, useState } from 'react'
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 
 interface GalleryImage {
@@ -14,6 +16,11 @@ const OurProject: React.FC = () => {
   const [isPaused, setIsPaused] = useState(false)
   const [images, setImages] = useState<string[]>([])
   const [loading, setLoading] = useState(true)
+
+  // Initialize AOS
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: true })
+  }, [])
 
   // Fetch images from API
   useEffect(() => {
@@ -88,6 +95,9 @@ const OurProject: React.FC = () => {
         mb={['12px', '16px', '20px']}
         fontSize={['2xl', '3xl', '3xl', '4xl']}
         color="#261F1A"
+        data-aos="fade-down"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="100"
       >
         Gallery
       </Heading>
@@ -98,6 +108,9 @@ const OurProject: React.FC = () => {
         textAlign="center" 
         px={['4', '6', '0']}
         color="#261F1A"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="200"
       >
         Explore our portfolio of stunning interior designs that blend aesthetics with functionality
       </Text>
@@ -124,6 +137,9 @@ const OurProject: React.FC = () => {
         border="6px solid #A9957B"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
+        data-aos="zoom-in"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="300"
       >
         {/* Inner Container for Images */}
         <Box
@@ -252,6 +268,9 @@ const OurProject: React.FC = () => {
         maxW="1200px"
         width="100%"
         px={['4', '6', '8']}
+        data-aos="fade-up"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="400"
       >
         <style jsx>{`
           .thumbnail-container {
