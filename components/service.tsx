@@ -1,7 +1,13 @@
-import React from 'react'
-import { Grid, Text, Flex, Heading, Button, Box, Image } from '@chakra-ui/core'
+import { Box, Button, Flex, Grid, Heading, Image, Text } from '@chakra-ui/core'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import React, { useEffect } from 'react'
 
 const Service: React.FC = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: true })
+  }, [])
+  
   return (
     <Box id="services" position="relative" mt={['12', '16', '20', '24']}>
       <Image
@@ -16,6 +22,9 @@ const Service: React.FC = () => {
         borderWidth="10px"
         borderStyle="solid"
         boxShadow="0px 4px 4px rgba(0, 0, 0, 0.25)"
+        data-aos="fade-right"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="200"
       />
       <Grid
         backgroundColor="#A9957B"
@@ -40,6 +49,9 @@ const Service: React.FC = () => {
             fontWeight="extrabold"
             mb={['6px', '8px', '8px']}
             alignSelf="flex-start"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="100"
           >
             Our Professional Services
           </Heading>
@@ -49,6 +61,9 @@ const Service: React.FC = () => {
             fontWeight="normal"
             mb={['12px', '16px', '20px']}
             alignSelf="flex-start"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="200"
           >
             We Will Create Modern And First Class Interior.
           </Heading>
@@ -59,6 +74,9 @@ const Service: React.FC = () => {
             textAlign="left"
             lineHeight={['1.5', '1.6', '1.6', '23px']}
             mr={['0', '0', '0', '30px']}
+            data-aos="fade-left"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="300"
           >
             Barcode Studio, an interior and architectural 
             design firm, offers a diverse range of professional 
@@ -84,6 +102,9 @@ const Service: React.FC = () => {
               backgroundColor="#fff"
               color="orange.600"
               width="fit-content"
+              data-aos="fade-left"
+              data-aos-easing="ease-in-out"
+              data-aos-delay="400"
             >
               Learn More
             </Button>

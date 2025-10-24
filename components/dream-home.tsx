@@ -1,13 +1,12 @@
-import React from 'react'
-import { Flex, Heading, Image, Text, Box } from '@chakra-ui/core'
-import Button from './button'
-import { useEffect } from 'react'
+import { Box, Flex, Heading, Text } from '@chakra-ui/core'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import { MdVideoCall, MdAccountBalanceWallet, MdCancel } from 'react-icons/md'
+import React, { useEffect } from 'react'
+import { MdAccountBalanceWallet, MdCancel, MdVideoCall } from 'react-icons/md'
+import Button from './button'
 const DreamHome: React.FC = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000, once: true })
+    Aos.init({ duration: 1000, once: true })
   }, [])
   return (
     <Flex width="100%" flexDirection="column" alignItems="center" mt={['12', '16', '20', '24']} px={['4', '6', '8', '0']}>

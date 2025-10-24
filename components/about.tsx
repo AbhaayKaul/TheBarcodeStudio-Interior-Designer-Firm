@@ -1,9 +1,14 @@
-import React from 'react'
-import { Box, Flex, Heading, Text, Image, Grid } from '@chakra-ui/core'
-import Button from './button'
-import { FaLinkedin, FaInstagram } from 'react-icons/fa'
+import { Box, Flex, Grid, Heading, Image, Text } from '@chakra-ui/core'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import React, { useEffect } from 'react'
+import { FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 const About: React.FC = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000, once: true })
+  }, [])
+  
   return (
     <Grid id="about" templateColumns="repeat(5, 1fr)" marginY={['12', '16', '20', '20']} alignItems="center"  >
       <Flex
@@ -22,10 +27,21 @@ const About: React.FC = () => {
           fontWeight="semi-bold"
           mb={['8px', '10px', '10px']}
           alignSelf="flex-start"
+          data-aos="fade-right"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="100"
         >
           About us
         </Heading>
-        <Text fontSize={['sm', 'sm', 'md', 'md']} mb="20px" alignSelf="flex-start" textAlign="left">
+        <Text 
+          fontSize={['sm', 'sm', 'md', 'md']} 
+          mb="20px" 
+          alignSelf="flex-start" 
+          textAlign="left"
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="200"
+        >
         The Barcode Studio is a multidisciplinary architecture practice focussed 
         on delivering the highest quality architecture services to our clients. 
         We focus on crafting and delivering the perfect blend of our 3 main pillars: 
@@ -38,7 +54,14 @@ const About: React.FC = () => {
         </Text>
         
         {/* Social Media Links */}
-        <Flex alignSelf="flex-start" mt="4" mb="2">
+        <Flex 
+          alignSelf="flex-start" 
+          mt="4" 
+          mb="2"
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="300"
+        >
           <Text fontSize={['sm', 'md']} fontWeight="600" mr="4" alignSelf="center" color="#261F1A">
             Connect with us:
           </Text>
@@ -104,7 +127,14 @@ const About: React.FC = () => {
         </Flex>
         {/* <Button>Learn More</Button> */}
       </Flex>
-      <Box gridColumn={['1 / 7', '1 / 7', '1 / 7', '4 / 6', '4 / 6']}  marginY="5" paddingX={['6', '8', '8', '0', '0']} >
+      <Box 
+        gridColumn={['1 / 7', '1 / 7', '1 / 7', '4 / 6', '4 / 6']}  
+        marginY="5" 
+        paddingX={['6', '8', '8', '0', '0']}
+        data-aos="fade-left"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="400"
+      >
         <Image
           width={['100%', '100%', '100%', '80%', '95%']}
           maxW="690px"
