@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, Flex, Grid, Box } from '@chakra-ui/core'
 import Logo from './logo'
-import { FaLinkedin, FaInstagram, FaYoutube, FaFacebookF } from 'react-icons/fa'
+import { FaWhatsapp, FaLinkedin, FaInstagram, FaYoutube, FaFacebookF } from 'react-icons/fa'
 
 const Footer: React.FC = () => {
   const scrollToSection = (sectionId: string) => {
@@ -180,6 +180,19 @@ const Footer: React.FC = () => {
           Ground floor, F1-22, Kotla Rd,<br/>
           Pocket 1, Sector 11F, Rohini,<br/>
           Delhi, 110085, India
+        </Text>
+        <Text mb="8px" fontSize={['xs', 'sm', 'sm']} lineHeight={['1.5', '1.6']} color="#666">
+          <strong>Whatsapp:</strong><br/>
+          <a
+            href="https://wa.me/918448023979?text=Hello%2C%20I%E2%80%99d%20like%20to%20know%20more%20about%20your%20services%21"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Chat on WhatsApp"
+            style={{ display: 'inline-flex', alignItems: 'center', gap: 8, color: '#25D366', textDecoration: 'none' }}
+          >
+            <Box as={FaWhatsapp} size={['16px', '18px', '20px']} color="#25D366" />
+            <span style={{ fontSize: 14 }}>+91 8448023979</span>
+          </a>
         </Text>
         <Text mb="6px" fontSize={['xs', 'sm', 'sm']} color="#666">
           <strong>Phone:</strong> <a href="tel:+918448023979" style={{ color: '#C9A961', textDecoration: 'none' }}>+91 8448023979</a>
